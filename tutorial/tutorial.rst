@@ -1294,6 +1294,8 @@ LVM configuration. A minimal configuration file will contain::
     volume_group = cinder-volumes
     verbose = True
     auth_strategy = keystone
+    state_path = /var/lib/cinder
+    lock_path = /var/lock/cinder
     sql_connection = mysql://cinderUser:cinderPass@10.0.0.3/cinder
     rabbit_host=10.0.0.3
     iscsi_ip_address=10.0.0.8
